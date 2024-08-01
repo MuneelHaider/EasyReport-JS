@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8ddbc4;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    width: 20%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    gap :40px;
+    width:  70%;
+    font-size: 15px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(155, 136, 136);
+    text-decoration: underline;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 80px;
+    width:  10%;
+  }
+  
+  .login-btn {
+    padding: 8px 15px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #8ddbc4;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-actions {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
+
+
+  @media (max-width: 68px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #8ddbc4;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-actions {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
