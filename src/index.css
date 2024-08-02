@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0e7ff;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-left, .login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-left {
+    background-color: #f8faff;
+}
+
+.login-right {
+    background-color: #8ddbc4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-right .logo {
+    width: 200px;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    background: #24a883;
+    padding: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background: #f8faff;
+}
+
+.login-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-actions a {
+    color: #555;
+    text-decoration: underline; 
+    margin-bottom: 40px; 
+    margin-left: 180px
+}
+
+.login-actions button {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #24a883;
+    color: #24a883;
+    border-radius: 30px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.login-actions button:hover {
+    background-color: #24a883;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-link p {
+    color: #000000;
+}
+
+.register-link a {
+    color: hsl(147, 93%, 24%);
+    text-decoration: none;
+}
+
+.welcome-box {
+    border: 2px solid #8ddbc4;
+    border-radius: 10px;
+    padding: 20px; 
+   /* background-color: #77ba24;   */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+.welcome-box form {
+    margin: 0; 
+}

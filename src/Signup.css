@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #8ddbc4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;  
+    height: 100vh;
+    padding: 20px;  
+    padding-right: 100px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+    justify-content: center;
+    width: 50%;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    width: 50%;
+}
+
+.logo {
+    width: 200px;  
+}
+
+
+h2 {
+    margin-bottom: 20px; 
+    color: #333;
+    text-align: center; 
+}
+
+.register-form {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    width: 500px;  
+    height: auto;  
+    text-align: left;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px; 
+    font-size: 14px;
+    color: #555555;
+}
+
+.register-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #f8faff;
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #24a883;
+    color: #24a883;
+    border-radius: 30px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24a883;
+    color: #fff;
+}
+
+.register-form p {
+    margin-top: 10px; 
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.register-form a {
+    color: hsl(147, 93%, 24%);
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+
+.welcome-box {
+   
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.welcome-box form {
+    margin: 0;
+}
+
