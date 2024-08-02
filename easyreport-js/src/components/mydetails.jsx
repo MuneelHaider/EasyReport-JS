@@ -206,20 +206,32 @@ const Mydetails = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label>Account/Number</label>
+                    <label>CardNumber</label>
                     <input
-                        type="text"
-                        name="accountNumber"
+                        type="Number"
+                        name="CardNumber"
                         value={formData.accountNumber}
                         onChange={handleChange}
                     />
                 </div>
                 <div className="form-group">
-                    <label>Account Holder Name</label>
+                    <label>Expiry Date</label>
                     <input
                         type="text"
-                        name="accountHolderName"
+                        name="Expiry date"
+                          maxlength="5"
                         value={formData.accountHolderName}
+                        onChange={handleChange}
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>CCV</label>
+                    <input
+                        type="Number"
+                        name="CCV"
+                        value={formData.accountHolderName}
+                        maxlength="3"
                         onChange={handleChange}
                     />
                 </div>

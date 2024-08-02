@@ -1,0 +1,25 @@
+.Container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap; /* Optional, if elements should wrap to the next line if they overflow */
+    align-items: center; /* Align items vertically */
+
+
+  }
+  .Container  :hover{
+  background-color: antiquewhite;
+
+  }
+  
+  .Container p {
+    margin: 0;
+    padding: 10px 10px 10px 10px; /* Optional, adjust padding as needed */
+    border: 0.5px solid;
+    border-color: rgb(15, 45, 212);
+    width:  100px;
+    height:  20px;
+   text-align: center;
+   background-color: rgb(218, 218, 236);
+  
+  }
+  
