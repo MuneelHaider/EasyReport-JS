@@ -1,53 +1,121 @@
+/* Root styles for global elements */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #3edce7;
+    --accent-color: #f39c12;
+    --bg-color: #f7f7f7;
+    --text-color: #333;
+    --border-radius: 10px;
+    --transition-duration: 0.3s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
 .AppointmentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #16fff3, #ffadad);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 40px auto;
 }
 
 .UpperSection {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
-    width: 100%;
-    margin-top: 120px;
-    border: 2px solid black;
+    width: 70%;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #e7f5e7;
+    background-color: rgb(247, 252, 246);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.ImageSection {
+.DoctorSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
-    border: 2px solid rgb(34, 56, 255);
-    border-radius: 8px;
-    padding: 10px;
-    margin-right: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.DoctorSection:hover {
+    transform: scale(1.05);
+}
+
+.ImageSection {
+    border: 2px solid #10deec;
+    border-radius: 70%;
+    width: 20%;
+    height: 80%;
     text-align: center;
+    margin-right: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow var(--transition-duration);
 }
 
 .ImageSection img {
     width: 100%;
-    height: auto;
-    border-radius: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform var(--transition-duration);
 }
 
-.ImageSection p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: blueviolet;
+.ImageSection:hover img {
+    transform: scale(1.1);
 }
 
 .AvailabilitySection {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 75%;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0;
 }
+
+.DoctorInformation {
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+  
+}
+.UpperSection h1 
+{
+    font-size: 20px;
+}
+.UpperSection:hover h1 
+{
+    color: #534747;
+}
+.DoctorInformation p {
+    margin: 5px 0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.DoctorInformation p:hover {
+    color: rgb(90, 87, 87);
+
+}
+
+
 
 .dropdown {
     position: relative;
@@ -56,31 +124,34 @@
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color var(--transition-duration);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .dropdown-content div {
-    color: black;
+    color: var(--text-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     cursor: pointer;
+    transition: background-color var(--transition-duration);
 }
 
 .dropdown-content div:hover {
@@ -92,19 +163,17 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #1c86ee;
 }
 
 .LowerSection {
-    width: 100%;
+    width: 70%;
     padding: 20px;
-}
-
-.LowerSection {
-    width: 100%;
-    padding: 20px;
-    background-color: #f4f4f4;
+    background-color: white;
     border-top: 1px solid #ddd;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .form-group {
@@ -115,30 +184,37 @@ label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    color: var(--text-color);
+}
+
+select, input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 select {
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    transition: border-color var(--transition-duration);
 }
 
-input[type="radio"] {
-    margin-right: 10px;
+select:focus {
+    border-color: var(--primary-color);
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color var(--transition-duration);
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: var(--accent-color);
 }

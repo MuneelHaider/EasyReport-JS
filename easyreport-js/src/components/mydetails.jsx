@@ -120,11 +120,12 @@ const Mydetails = () => {
                         onChange={handleChange}
                     />
                 </div>
+                
                 <div className="form-group">
-                    <label>Date of Birth</label>
+                    <label>Phone Number</label>
                     <input
-                        type="date"
-                        name="dob"
+                        type="Number"
+                        name="Number"
                         value={formData.dob}
                         onChange={handleChange}
                     />

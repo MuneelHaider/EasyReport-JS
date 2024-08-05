@@ -63,17 +63,25 @@ function DoctorAppointment() {
 
     const Time = [
         "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "10:00 pm",
-        "11:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm", "12:00 pm",
+        "11:00 pm", "12:00 pm", "12:00 pm", "12:00 pm",
         "10:00 pm", "11:00 pm"
     ];
 
     return (
         <div className="AppointmentContainer">
-            <div className="UpperSection">
+           
+                <div className="DoctorSection">
                 <div className="ImageSection">
                     <img src={doctor} alt="doctor_pic" />
-                    <p>DoctorName</p>
+                  
                 </div>
+                <div className="DoctorInformation">
+                <p>Muhamad Abdullah</p>
+                <p> General Doctor</p>
+                </div>
+                </div>
+                <div className="UpperSection">
+                    <h1> Appointment Slots</h1>
                 <div className="AvailabilitySection">
                     <div className="dropdown">
                         <button className="dropbtn" onClick={toggleDropdown}>
@@ -92,6 +100,7 @@ function DoctorAppointment() {
                     <Availability Time={Time} />
                 </div>
             </div>
+        
             <div className="LowerSection">
                 <form>
                     <div className="form-group">

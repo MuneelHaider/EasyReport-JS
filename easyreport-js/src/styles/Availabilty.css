@@ -1,25 +1,32 @@
 .Container {
-    width: 500px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Optional, if elements should wrap to the next line if they overflow */
-    align-items: center; /* Align items vertically */
+    flex-wrap: wrap;
+    align-items: center; 
+   
+      
 
 
   }
   .Container  :hover{
-  background-color: antiquewhite;
+  background-color:rgb(234, 245, 233);
+   border-color: brown;
 
   }
   
   .Container p {
     margin: 0;
-    padding: 10px 10px 10px 10px; /* Optional, adjust padding as needed */
-    border: 0.5px solid;
-    border-color: rgb(15, 45, 212);
-    width:  100px;
-    height:  20px;
+    padding: 10px 10px 10px 10px; 
+    border-right: 0.5px solid;
+    border-color: rgb(224, 214, 214);
+    background-color: aliceblue;
+    width:  10%;
+    height:  13px;
+    margin: 5px;
+
    text-align: center;
-   background-color: rgb(218, 218, 236);
+   justify-content: center;
+   text-size-adjust: 10px;
   
   }
   
