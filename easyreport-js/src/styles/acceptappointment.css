@@ -1,0 +1,55 @@
+.AcceptAppointment {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+
+  }
+  
+  .Upperpart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .DoctorDetails h2, .AppointmentDetails p {
+    margin: 5px 0;
+  }
+  
+  .DoctorDetails h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .AppointmentDetails p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .lowerPart {
+    text-align: center;
+  }
+  
+  .lowerPart p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .lowerPart button {
+    padding: 10px 20px;
+    background-color: #8cd1c3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lowerPart button:hover {
+    background-color: #5ea395;
+  }
+  

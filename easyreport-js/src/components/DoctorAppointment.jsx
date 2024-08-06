@@ -24,7 +24,7 @@ function DoctorAppointment() {
             date.setDate(today.getDate() + i);
             dateList.push({ 
                 label: formatDate(date),
-                value: date.toISOString().split('T')[0] // For value, use ISO format
+                value: date.toISOString().split('T')[0] 
             });
         }
         setDates(dateList);
@@ -48,7 +48,7 @@ function DoctorAppointment() {
 
         if (value === "onsite") {
             setAppointmentType("onsite");
-            setOnlineTypes([]); // Clear online types if onsite is selected
+            setOnlineTypes([]); 
         } else if (value === "online") {
             setAppointmentType("online");
         }

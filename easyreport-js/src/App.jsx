@@ -1,28 +1,17 @@
-import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import LoginPage from './components/login'
-import Navbar from './components/navbar'
-import Mydetails from './components/mydetails'
-//import Availability from './components/AvaibiltyList'
-import Appointment from './components/DoctorAppointment'
+import React from 'react';
+//import Navbar from './components/navbar';
+import FinalAppointmentDetails from './components/finalappointmentdetails';
+
 
 function App() {
- // 
+
 
   return (
     <div className="App">
-
-<div>
-<Navbar />
-</div>
-
-<div >
-<Appointment />
-</div>
-
+    <FinalAppointmentDetails/>
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
